@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Php Variable Declaration</title>
     <style>
-    body {
-        margin: 0;
-        padding: 10px;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-    }
+        body {
+            margin: 0;
+            padding: 10px;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
 
-    h3 {
-        margin: 0;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-    }
+        h3 {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
     </style>
 
 
