@@ -47,7 +47,6 @@
             $website = "Website Field is Required";
         } else {
             $website = test_input($_POST["website"]);
-            // Validate URL
             if (!filter_var($website, FILTER_VALIDATE_URL)) {
                 $websiteErr = "Invalid URL";
             }
