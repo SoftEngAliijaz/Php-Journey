@@ -1,0 +1,50 @@
+/* Example 1: Blue Heading */
+h1 {
+    color: blue;
+  }
+  
+  /* Example 2: Large Heading */
+  h2 {
+    font-size: 24px;
+  }
+  
+  /* Example 3: Center-aligned Heading */
+  h3 {
+    text-align: center;
+  }
+  
+  /* Example 4: Italic Paragraph */
+  p {
+    font-style: italic;
+  }
+  
+  /* Example 5: Bold Paragraph */
+  p.bold {
+    font-weight: bold;
+  }
+  
+  /* Example 6: Underlined Heading */
+  h4 {
+    text-decoration: underline;
+  }
+  
+  /* Example 7: Uppercase Heading */
+  h5 {
+    text-transform: uppercase;
+  }
+  
+  /* Example 8: Yellow Background */
+  p.highlight {
+    background-color: yellow;
+  }
+  
+  /* Example 9: Paragraph with Border */
+  p.border {
+    border: 1px solid black;
+  }
+  
+  /* Example 10: Heading with Margin */
+  h6 {
+    margin-top: 20px;
+  }
+  

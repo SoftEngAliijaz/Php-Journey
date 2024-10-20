@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tables</title>
+</head>
+
+<body>
+  <div>
+    <!-- Table Tag -->
+    <table>
+      <!-- <tr> is Table ROW -->
+      <tr>
+        <!-- <th> is Table Headings -->
+        <th>Company</th>
+        <th>Name</th>
+        <th>Country</th>
+        <th>Contact</th>
+      </tr>
+
+      <tr>
+        <!-- <td> is Table Data -->
+        <td>Computer Software</td>
+        <td>Faisal Ijaz</td>
+        <td>DUBAI (UAE)</td>
+        <td>0333-1234567</td>
+      </tr>
+      <tr>
+        <!-- <td> is Table Data -->
+        <td>Software</td>
+        <td>Muhammad Ali</td>
+        <td>PAKISTAN</td>
+        <td>0309-1234567</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
+
+<!-- Some (CSS) -->
+<style>
+    /* Flex container */
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    /* Table styling */
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 1rem;
+      font-size: 1.2rem;
+    }
+
+    th, td {
+      padding: 0.5rem;
+      border: 1px solid black;
+    }
+
+    th {
+      background-color: lightgray;
+    }
+</style>

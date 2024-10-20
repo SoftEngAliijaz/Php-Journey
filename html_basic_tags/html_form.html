@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+
+    <style>
+        li {
+            padding: 05px;
+            justify-content: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="textFormFields">
+        <ol>   
+            <!-- Heading2 -->
+            <h1>Welcome to Web Development Course.</h1>
+       <!-- form action -->
+        <form action="form.php">
+      
+        <!-- text form -->
+        <li><input type="text" placeholder="Enter Your Name"></li>
+      
+        <!-- radio form -->
+        <li><input type="radio" name="Section" value="section a"></li>
+      
+        <!-- checkbox form -->
+        <li><input type="checkbox" name="Interest" value="web development"></li>
+
+        <!-- dropdown form -->
+        <li>
+            <!-- dropdown form -->
+            <select name="Experience">
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+          </li>
+
+        <!-- message form -->
+        <li>
+            <!-- message form -->
+            <textarea name="Message" placeholder="Enter your message here"></textarea>
+            <button type="submit">Submit</button>
+        </li>
+    </form>
+        </ol>
+    </div>
+</body>
+</html> 

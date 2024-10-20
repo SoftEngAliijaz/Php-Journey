@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carousel Slider</title>
+  
+  <style>
+    .carousel {
+      max-width: 100%;
+      height: auto;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .carousel-inner {
+      width: 500%;
+      height: 100%;
+      display: flex;
+    }
+
+    .carousel-item {
+      flex: 20%;
+      height: 100%;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .carousel-controls {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+    }
+
+    .carousel-controls button {
+      display: inline-block;
+      padding: 5px;
+      margin-right: 5px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      .carousel {
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <img src="https://media.istockphoto.com/id/1402170236/photo/faria-lima-avenue-city-financial-center-sao-paulo-brazil.jpg?b=1&s=170667a&w=0&k=20&c=chhB1Aa2EcDiND-zq2rrlXu3HzIAt7X_NP1XR9n4K3w=" alt="Image 1">
+      </div>
+      <div class="carousel-item">
+        <img src="https://media.istockphoto.com/id/1319270783/photo/new-homes-on-a-quiet-street-in-raleigh-nc.jpg?b=1&s=170667a&w=0&k=20&c=CE0wl9Vi3yYHXbFvYn4dzINA-g8LvExuIgszCSbzVv8=" alt="Image 2">
+      </div>
+      <div class="carousel-item">
+        <img src="https://media.istockphoto.com/id/529964085/photo/mango.jpg?s=1024x1024&w=is&k=20&c=1jABcguTDPw1n8x53Z-K42klDCSkq85ovcXTqBrdY_c=" alt="Image 3">
+      </div>
+      <div class="carousel-item">
+        <img src="https://media.istockphoto.com/id/164923960/photo/sunny-grape.jpg?s=1024x1024&w=is&k=20&c=KZYc1pAqgC2NJx2u_xGMKhwTdrsWFAMJPIW2dEC_dSE=" alt="Image 4">
+      </div>
+      <div class="carousel-item">
+        <img src="https://media.istockphoto.com/id/1475267244/photo/macro-sliced-watermelon-red-watermelon-triangular-piece-on-white-blackground.jpg?b=1&s=170667a&w=0&k=20&c=Gq3YU3AN8DRn6OPdktCtoMqy1KJb0ZMDkRn3vLjh6GE=" alt="Image 5">
+      </div>
+    </div>
+
+    <div class="carousel-controls">
+      <button class="prev-button">&#8249;</button>
+      <button class="next-button">&#8250;</button>
+    </div>
+  </div>
+
+  <script>
+    const prevButton = document.querySelector('.prev-button');
+    const nextButton = document.querySelector('.next-button');
+    const carouselInner = document.querySelector('.carousel-inner');
+
+    let translateValue = 0;
+    const itemWidth = carouselInner.clientWidth / 5;
+
+    prevButton.addEventListener('click', () => {
+      translateValue += itemWidth;
+      carouselInner.style.transform = `translateX(${translateValue}px)`;
+    });
+
+    nextButton.addEventListener('click', () => {
+      translateValue -= itemWidth;
+      carouselInner.style.transform = `translateX(${translateValue}px)`;
+    });
+  </script>
+</body>
+</html>

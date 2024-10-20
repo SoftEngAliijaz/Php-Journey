@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Web Page UI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f7f7f7;
+            background-image: url(/bg.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+            padding: 0 20px;
+            color: #fff;
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+        }
+
+        .social-icons i {
+            font-size: 24px;
+            margin-right: 5px;
+        }
+
+        .middle {
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin-bottom: 0;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 5px 10px;
+            border-radius: 3px;
+            transition: 0.4s ease;
+        }
+
+        .main {
+            text-align: center;
+            margin: 150px auto;
+        }
+
+        .check {
+            background-color: #1b1725;
+            color: #fff;
+            border-radius: 25px;
+            display: inline-block;
+            margin-right: 10px;
+            padding: 10px 20px;
+        }
+
+        .special {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .explore {
+            margin-left: 60px;
+            color: white;
+            margin: 0;
+        }
+
+        .description {
+            color: white;
+            border-radius: 25px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        /* Updated Styles */
+        .special {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="left">
+            <p class="followus">Follow us:</p>
+            <div class="social-icons">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+        <div class="middle">
+            <p id="logo">Photogenic</p>
+        </div>
+        <div class="right">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="main">
+        <p class="check">Check this out:</p>
+        <div>
+            <p class="special">Today's Special</p>
+            <p class="explore">Explore</p>
+        </div>
+        <p class="description">Explore the beautiful places of Pakistan With Us.</p>
+    </div>
+</body>
+</html>

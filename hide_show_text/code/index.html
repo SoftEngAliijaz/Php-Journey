@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hide and Show Text</title>
+
+    <style>
+      .hidden-text {
+        display: none;
+      }
+
+      .show-text {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button onclick="toggleText()">Toggle Text</button>
+    <p id="textToToggle" class="show-text">
+      This is the text that will be toggled.
+    </p>
+
+    <script>
+      function toggleText() {
+        var text = document.getElementById("textToToggle");
+
+        if (text.classList.contains("show-text")) {
+          text.classList.remove("show-text");
+          text.classList.add("hidden-text");
+        }
+        else {
+          text.classList.remove("hidden-text");
+          text.classList.add("show-text");
+        }
+      }
+    </script>
+  </body>
+
+</html>
