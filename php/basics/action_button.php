@@ -61,9 +61,7 @@
         <a target="_blank" href="https://www.linkedin.com/in/muhammad-ali-ijaz/">Press Me to go to LinkedIn</a>
     </div>
     <div class="action-button">
-        <button class="button">
-            Press Me
-        </button>
+        <button>Press Me</button>
     </div>
 </body>
 

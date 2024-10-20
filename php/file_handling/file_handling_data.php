@@ -7,15 +7,13 @@
     <title>File Handling Data</title>
 
     <style>
-    h1 {
-        color: red;
-    }
+
     </style>
 </head>
 
 <body>
     <?php
-    echo "<h1>This is File which we'll show in the File Handling Main </h1>";
+    echo "<h1>From File Handling Data.PHP [Data is Showing]</h1>";
     ?>
 </body>
 
