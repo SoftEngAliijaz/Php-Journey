@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Php Form Handling</title>
+    </head>
+
+    <body>
+        <form action="form.php" method="post">
+            <input type="text" name="name" value="name" placeholder="Enter Your Name">
+            <br><br>
+            <input type="email" name="email" value="email" placeholder="Enter Your Email">
+            <br><br>
+
+            <input type="password" name="password" value="password" placeholder="Enter Your Password">
+            <br><br>
+
+
+            <input type="checkbox" name="skills[]" value="php"><span>PHP</span>
+            <br><br>
+
+            <input type="checkbox" name="skills[]" value="java"><span>JAVA</span>
+            <br><br>
+
+            <input type="checkbox" name="skills[]" value="dart"><span>DART</span>
+            <br><br>
+
+            <input type="checkbox" name="skills[]" value="flutter"><span>Flutter</span>
+            <br><br>
+
+
+
+            <input type="radio" name="gender" value="male"><span>Male</span>
+            <br><br>
+
+            <input type="radio" name="gender" value="female"><span>Fe-Male</span>
+            <br><br>
+
+
+            <select name="city">
+                <option>Select Your City</option>
+                <option value="sahiwal">Sahiwal</option>
+                <option value="okara">Okara</option>
+                <option value="pakpattan">Pakpattan</option>
+                <option value="faisalabad">Faisalabad</option>
+                <option value="lahore">Lahore</option>
+            </select>
+            <br><br>
+
+            <textarea name="bio">Enter Your Bio</textarea>
+            <br><br>
+            <button>Sign Up</button>
+
+        </form>
+
+    </body>
+
+</html>

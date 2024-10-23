@@ -1,1 +1,0 @@
-<?php echo "<h1>Hello World, To Php-Journey</h1>";

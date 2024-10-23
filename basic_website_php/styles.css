@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+}
+
+.main-body {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+img {
+    width: 500px;
+}
