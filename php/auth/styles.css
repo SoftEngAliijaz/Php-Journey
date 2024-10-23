@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     height: 100%;
     font-family: Arial, sans-serif;
 }
@@ -13,32 +14,72 @@ body, html {
     display: flex;
     height: 100vh;
     width: 100%;
+    flex-direction: column;
 }
+
+@media (min-width: 768px) {
+    .main {
+        flex-direction: row;
+    }
+}
+
 
 .space {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1;
-    background-color: rgb(128, 64, 128); /* Purple with a hint of Blue */
+    flex: 0.5;
+    background-color: rgb(128, 64, 128);
     background: linear-gradient(135deg, rgb(128, 0, 128), rgb(0, 0, 255), rgb(255, 191, 0));
-    color: black;
+    color: white;
     padding: 20px;
-
 }
 
-.signUp {
+/* Hide the .space section on mobile view */
+@media (max-width: 768px) {
+    .space {
+        display: none;
+    }
+}
+
+.checkbox {
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+.signUp-Box {
     flex: 1;
     background-color: #f5f5f5;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.login-Box {
+    flex: 1;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    width: 100%;
+    border-radius: 10px;
 }
 
 h2 {
     text-align: center;
     margin-bottom: 20px;
+}
+
+.logintitle {
+    color: white;
 }
 
 .fields {
@@ -88,8 +129,18 @@ h2 {
 .btn:hover {
     background-color: #0056b3;
 }
-.box
-{
 
-    padding: 20px;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .signUp {
+        padding: 15px;
+    }
+
+    .input {
+        padding: 8px;
+    }
+
+    .btn {
+        padding: 10px;
+    }
 }
